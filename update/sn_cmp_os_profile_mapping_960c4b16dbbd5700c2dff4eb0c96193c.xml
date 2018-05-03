@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_os_profile_mapping">
+    <sn_cmp_os_profile_mapping action="INSERT_OR_UPDATE">
+        <cloud_account display_value="Vmware Cloud Account">692b8f52dbbd5700c2dff4eb0c961993</cloud_account>
+        <location display_value="devcloud">805b0f92dbbd5700c2dff4eb0c961987</location>
+        <price/>
+        <profile display_value="Linux">e4eb8716dbbd5700c2dff4eb0c9619dc</profile>
+        <sys_class_name>sn_cmp_os_profile_mapping</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:52:49</sys_created_on>
+        <sys_id>960c4b16dbbd5700c2dff4eb0c96193c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_os_profile_mapping_960c4b16dbbd5700c2dff4eb0c96193c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:52:49</sys_updated_on>
+        <template display_value="centos7">70ab835edbb1970079132f0e0b96194c</template>
+    </sn_cmp_os_profile_mapping>
+</record_update>

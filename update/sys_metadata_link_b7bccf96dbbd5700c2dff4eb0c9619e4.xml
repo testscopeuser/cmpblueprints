@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>ef0b0f52dbbd5700c2dff4eb0c96196f</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_ca_assc_datacenter">
+    <sn_cmp_ca_assc_datacenter action="INSERT_OR_UPDATE">
+        <alias>Azure Datacenter - westus</alias>
+        <cloud_account display_value="Azure Cloud Account">7adac352dbbd5700c2dff4eb0c96192b</cloud_account>
+        <ldc_id display_value="West US">9aea87dadbb1970079132f0e0b9619f6</ldc_id>
+        <mid_server/>
+        <resource_block display_value="Azure Datacenter">ddf5cd6bd722220097eb6ccf6e610346</resource_block>
+        <status>1</status>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:48:22</sys_created_on>
+        <sys_id>ef0b0f52dbbd5700c2dff4eb0c96196f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:48:22</sys_updated_on>
+    </sn_cmp_ca_assc_datacenter>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:55:45</sys_created_on>
+        <sys_id>b7bccf96dbbd5700c2dff4eb0c9619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Azure Datacenter - westus</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sys_metadata_link_b7bccf96dbbd5700c2dff4eb0c9619e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:55:45</sys_updated_on>
+        <tablename>sn_cmp_ca_assc_datacenter</tablename>
+    </sys_metadata_link>
+</record_update>

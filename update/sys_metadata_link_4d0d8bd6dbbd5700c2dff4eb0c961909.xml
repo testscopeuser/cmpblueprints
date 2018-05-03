@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>36aacf12dbbd5700c2dff4eb0c961938</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cmdb_ci_aws_datacenter">
+    <cmdb_ci_aws_datacenter action="INSERT_OR_UPDATE">
+        <asset/>
+        <asset_tag/>
+        <assigned/>
+        <assigned_to/>
+        <assignment_group/>
+        <attributes/>
+        <can_print>false</can_print>
+        <category/>
+        <change_control/>
+        <checked_in/>
+        <checked_out/>
+        <comments/>
+        <company/>
+        <correlation_id/>
+        <cost/>
+        <cost_cc>USD</cost_cc>
+        <cost_center/>
+        <datacenter_url/>
+        <delivery_date/>
+        <department/>
+        <discovery_source>ServiceNow</discovery_source>
+        <discovery_status display_value="DIS0010002">feca0352dbbd5700c2dff4eb0c961972</discovery_status>
+        <dns_domain/>
+        <due/>
+        <due_in/>
+        <fault_count>0</fault_count>
+        <first_discovered>2018-05-03 12:46:40</first_discovered>
+        <fqdn/>
+        <gl_account/>
+        <install_date/>
+        <install_status>1</install_status>
+        <invoice_number/>
+        <ip_address/>
+        <justification/>
+        <last_discovered>2018-05-03 12:50:16</last_discovered>
+        <lease_id/>
+        <location/>
+        <mac_address/>
+        <maintenance_schedule/>
+        <managed_by/>
+        <manufacturer/>
+        <model_id/>
+        <model_number/>
+        <monitor>false</monitor>
+        <morid/>
+        <name>us-west-1</name>
+        <object_id>us-west-1</object_id>
+        <operational_status>1</operational_status>
+        <order_date/>
+        <owned_by/>
+        <po_number/>
+        <purchase_date/>
+        <region>us-west-1</region>
+        <schedule/>
+        <serial_number/>
+        <server/>
+        <short_description/>
+        <skip_sync>false</skip_sync>
+        <start_date/>
+        <subcategory/>
+        <support_group/>
+        <supported_by/>
+        <sys_class_name>cmdb_ci_aws_datacenter</sys_class_name>
+        <sys_class_path>/!!/!)/!!/!(/!,</sys_class_path>
+        <sys_created_by>midserver</sys_created_by>
+        <sys_created_on>2018-05-03 12:46:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36aacf12dbbd5700c2dff4eb0c961938</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>midserver</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:50:16</sys_updated_on>
+        <unverified>false</unverified>
+        <vcenter_ref/>
+        <vcenter_uuid/>
+        <vendor/>
+        <warranty_expiration/>
+    </cmdb_ci_aws_datacenter>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:56:56</sys_created_on>
+        <sys_id>4d0d8bd6dbbd5700c2dff4eb0c961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>us-west-1</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sys_metadata_link_4d0d8bd6dbbd5700c2dff4eb0c961909</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:56:56</sys_updated_on>
+        <tablename>cmdb_ci_logical_datacenter</tablename>
+    </sys_metadata_link>
+</record_update>

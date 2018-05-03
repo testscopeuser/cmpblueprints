@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>a70b0f52dbbd5700c2dff4eb0c961970</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_ca_assc_dc_quota_type">
+    <sn_cmp_ca_assc_dc_quota_type action="INSERT_OR_UPDATE">
+        <associated_datacenter display_value="Azure Datacenter - westus">ef0b0f52dbbd5700c2dff4eb0c96196f</associated_datacenter>
+        <limit>2000</limit>
+        <quota_type display_value="vCPUs_Count">5a359cc10b232200e586a2c563673aa1</quota_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:48:22</sys_created_on>
+        <sys_id>a70b0f52dbbd5700c2dff4eb0c961970</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:48:22</sys_updated_on>
+    </sn_cmp_ca_assc_dc_quota_type>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:55:51</sys_created_on>
+        <sys_id>d1cc03d6dbbd5700c2dff4eb0c961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created 2018-05-03 05:48:22</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sys_metadata_link_d1cc03d6dbbd5700c2dff4eb0c961983</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:55:51</sys_updated_on>
+        <tablename>sn_cmp_ca_assc_dc_quota_type</tablename>
+    </sys_metadata_link>
+</record_update>

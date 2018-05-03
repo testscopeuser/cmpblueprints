@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>70ab835edbb1970079132f0e0b96194c</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="cmdb_ci_vmware_template">
+    <cmdb_ci_vmware_template action="INSERT_OR_UPDATE">
+        <asset/>
+        <asset_tag/>
+        <assigned/>
+        <assigned_to/>
+        <assignment_group/>
+        <attributes/>
+        <base_name/>
+        <bios_uuid>421789a2-8117-c89a-5346-a8b0c1546560</bios_uuid>
+        <can_print>false</can_print>
+        <category/>
+        <change_control/>
+        <checked_in/>
+        <checked_out/>
+        <comments/>
+        <company/>
+        <correlation_id>42 17 89 a2 81 17 c8 9a-53 46 a8 b0 c1 54 65 60</correlation_id>
+        <cost/>
+        <cost_cc>USD</cost_cc>
+        <cost_center/>
+        <cpus>1</cpus>
+        <credentials display_value="vmware">522c0356dbbd5700c2dff4eb0c961903</credentials>
+        <delivery_date/>
+        <department/>
+        <discovery_source>ServiceNow</discovery_source>
+        <disks>1</disks>
+        <disks_size>4</disks_size>
+        <dns_domain/>
+        <due/>
+        <due_in/>
+        <fault_count>0</fault_count>
+        <first_discovered>2018-05-03 12:50:55</first_discovered>
+        <fqdn/>
+        <gl_account/>
+        <guest_id>centos64Guest</guest_id>
+        <guest_os>Linux</guest_os>
+        <image_path>[vmstore] staticvm/staticvm.vmtx</image_path>
+        <image_source/>
+        <image_type/>
+        <infuse_key>1</infuse_key>
+        <install_date/>
+        <install_status>1</install_status>
+        <invoice_number/>
+        <ip_address/>
+        <justification/>
+        <last_discovered>2018-05-03 12:50:55</last_discovered>
+        <lease_id/>
+        <location/>
+        <mac_address/>
+        <maintenance_schedule/>
+        <managed_by/>
+        <manufacturer/>
+        <memory>512</memory>
+        <model_id/>
+        <model_number/>
+        <monitor>false</monitor>
+        <name>centos7</name>
+        <nics>1</nics>
+        <object_id>vm-584</object_id>
+        <offer/>
+        <operational_status>1</operational_status>
+        <order_date/>
+        <owned_by/>
+        <po_number/>
+        <purchase_date/>
+        <root_device_type/>
+        <schedule/>
+        <serial_number/>
+        <server/>
+        <short_description/>
+        <skip_sync>false</skip_sync>
+        <start_date/>
+        <status/>
+        <subcategory/>
+        <support_group/>
+        <supported_by/>
+        <sys_class_name>cmdb_ci_vmware_template</sys_class_name>
+        <sys_class_path>/!!/!)/!8/!!/!#</sys_class_path>
+        <sys_created_by>midserver</sys_created_by>
+        <sys_created_on>2018-05-03 12:50:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>70ab835edbb1970079132f0e0b96194c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:53:24</sys_updated_on>
+        <unverified>false</unverified>
+        <update_host_name>1</update_host_name>
+        <vcenter_ref display_value="VMware vCenter Server @ 10.198.1.13">7b4b8b92dbbd5700c2dff4eb0c9619bc</vcenter_ref>
+        <vcenter_uuid>884c342b-68de-4e66-9f8d-7898b653c3b6</vcenter_uuid>
+        <vendor/>
+        <version/>
+        <vm_instance_uuid>501718f1-f683-2f81-d87f-eeeef3f28d70</vm_instance_uuid>
+        <vm_namer/>
+        <warranty_expiration/>
+    </cmdb_ci_vmware_template>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:58:37</sys_created_on>
+        <sys_id>316d4f1adbbd5700c2dff4eb0c961966</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>centos7</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sys_metadata_link_316d4f1adbbd5700c2dff4eb0c961966</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:58:37</sys_updated_on>
+        <tablename>cmdb_ci_os_template</tablename>
+    </sys_metadata_link>
+</record_update>

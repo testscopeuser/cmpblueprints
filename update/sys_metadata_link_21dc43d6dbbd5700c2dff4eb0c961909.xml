@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b97bc3d2dbbd5700c2dff4eb0c961932</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_ca_assc_datacenter">
+    <sn_cmp_ca_assc_datacenter action="INSERT_OR_UPDATE">
+        <alias>vSphere Datacenter - devcloud</alias>
+        <cloud_account display_value="Vmware Cloud Account">692b8f52dbbd5700c2dff4eb0c961993</cloud_account>
+        <ldc_id display_value="devcloud">805b0f92dbbd5700c2dff4eb0c961987</ldc_id>
+        <mid_server/>
+        <resource_block display_value="vSphere Datacenter">5cc941360b632200e937c97193673a1a</resource_block>
+        <status>1</status>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:50:09</sys_created_on>
+        <sys_id>b97bc3d2dbbd5700c2dff4eb0c961932</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:50:09</sys_updated_on>
+    </sn_cmp_ca_assc_datacenter>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 12:56:09</sys_created_on>
+        <sys_id>21dc43d6dbbd5700c2dff4eb0c961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>vSphere Datacenter - devcloud</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sys_metadata_link_21dc43d6dbbd5700c2dff4eb0c961909</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 12:56:09</sys_updated_on>
+        <tablename>sn_cmp_ca_assc_datacenter</tablename>
+    </sys_metadata_link>
+</record_update>
