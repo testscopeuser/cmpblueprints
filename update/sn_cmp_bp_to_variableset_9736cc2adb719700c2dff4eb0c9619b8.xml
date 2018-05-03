@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_to_variableset">
+    <sn_cmp_bp_to_variableset action="INSERT_OR_UPDATE">
+        <blue_print display_value="TesBP">4806c0a6db719700c2dff4eb0c96193e</blue_print>
+        <sys_class_name>sn_cmp_bp_to_variableset</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 17:06:56</sys_created_on>
+        <sys_id>9736cc2adb719700c2dff4eb0c9619b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_to_variableset_9736cc2adb719700c2dff4eb0c9619b8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 17:06:56</sys_updated_on>
+        <variable_set display_value="Lifecycle Operation Parameters">4736cc2adb719700c2dff4eb0c9619a6</variable_set>
+    </sn_cmp_bp_to_variableset>
+</record_update>

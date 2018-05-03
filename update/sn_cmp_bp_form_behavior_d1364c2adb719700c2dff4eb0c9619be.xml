@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_form_behavior">
+    <sn_cmp_bp_form_behavior action="INSERT_OR_UPDATE">
+        <alias_name>TesBP ModifyLease</alias_name>
+        <bp_association display_value="TesBP">4806c0a6db719700c2dff4eb0c96193e</bp_association>
+        <cat_item_association display_value="ModifyLease">4336cc2adb719700c2dff4eb0c96197e</cat_item_association>
+        <parent_form_behavior/>
+        <stage_operation display_value="ModifyLease">210684a6db719700c2dff4eb0c96192e</stage_operation>
+        <sys_class_name>sn_cmp_bp_form_behavior</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-05-03 17:06:48</sys_created_on>
+        <sys_id>d1364c2adb719700c2dff4eb0c9619be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>TesBP ModifyLease</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_form_behavior_d1364c2adb719700c2dff4eb0c9619be</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-05-03 17:06:55</sys_updated_on>
+        <ui_category/>
+    </sn_cmp_bp_form_behavior>
+</record_update>
