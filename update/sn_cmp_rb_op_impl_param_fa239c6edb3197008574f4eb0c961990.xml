@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_param">
+    <sn_cmp_rb_op_impl_param action="INSERT_OR_UPDATE">
+        <applicable_to/>
+        <datasource>5</datasource>
+        <datasourcevalue>t1.micro,t2.nano,t2.micro,t2.small,t2.medium,t2.large,m1.small,m1.medium,m1.large,m1.xlarge,m2.xlarge,m2.2xlarge,m2.4xlarge,m3.medium,m3.large,m3.xlarge,m3.2xlarge,m4.large,m4.xlarge,m4.2xlarge,m4.4xlarge,m4.10xlarge,c1.medium,c1.xlarge,c3.large,c3.xlarge,c3.2xlarge,c3.4xlarge,c3.8xlarge,c4.large,c4.xlarge,c4.2xlarge,c4.4xlarge,c4.8xlarge,g2.2xlarge,g2.8xlarge,r3.large,r3.xlarge,r3.2xlarge,r3.4xlarge,r3.8xlarge,i2.xlarge,i2.2xlarge,i2.4xlarge,i2.8xlarge,d2.xlarge,d2.2xlarge,d2.4xlarge,d2.8xlarge,hi1.4xlarge,hs1.8xlarge,cr1.8xlarge,cc2.8xlarge,cg1.4xlarge</datasourcevalue>
+        <defaultvalue>${parameter.InstanceType}</defaultvalue>
+        <error_text>must be a valid EC2 instance type.</error_text>
+        <help_text/>
+        <host/>
+        <ismandatory>true</ismandatory>
+        <name>InstanceType</name>
+        <operation display_value="Provision">a2239c6edb3197008574f4eb0c96196b</operation>
+        <order>1</order>
+        <read_only>false</read_only>
+        <regex/>
+        <sys_class_name>sn_cmp_rb_op_impl_param</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:03:26</sys_created_on>
+        <sys_id>fa239c6edb3197008574f4eb0c961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>InstanceType</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_impl_param_fa239c6edb3197008574f4eb0c961990</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:03:26</sys_updated_on>
+        <ui_data_type/>
+        <value>t2.micro</value>
+        <visibilty>true</visibilty>
+    </sn_cmp_rb_op_impl_param>
+</record_update>

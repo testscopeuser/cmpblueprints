@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_model">
+    <sn_cmp_bp_stage_model action="INSERT_OR_UPDATE">
+        <blueprint display_value="Amazon Linux v1">f44310aedb3197008574f4eb0c961987</blueprint>
+        <blueprint_template/>
+        <intent>ServiceNowCloudBlueprint:
+  status: Published
+  name: Amazon Linux v1
+  category: Compute
+  deploymentModel:
+  - resource: AWS Datacenter
+    resourceblock: ServiceNow::AWS Datacenter
+  - resource: Amazon Linux v1
+    resourceblock: AWSCloudFormation::Amazon Linux v1
+    host: AWS Datacenter
+  operations:
+  - operation: Provision
+    operationType: PROVISION
+    resourceOperations:
+    - name: Amazon Linux v1.Provision
+      order: '1'
+      resourceBlock: Amazon Linux v1
+      resourceInterface: Amazon Linux v1 Interface
+      operation: Provision
+      parameters:
+      - name: KeyName
+        defaultValue: ${parameter.Amazon_Linux_v1_KeyName}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: CustomTags
+        defaultValue: ${parameter.Amazon_Linux_v1_CustomTags}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: SSHLocation
+        defaultValue: ${parameter.Amazon_Linux_v1_SSHLocation}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: Location
+        defaultValue: ${parameter.Location}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: InstanceType
+        defaultValue: ${parameter.Amazon_Linux_v1_InstanceType}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: CloudAccount
+        defaultValue: ${parameter.CloudAccount}
+        typeOfMap: SingleMap
+        useInOperation: false
+      depends: ''
+    - name: Blueprint Container Resource.Provision
+      order: '2'
+      resourceBlock: Amazon Linux v1 Blueprint Resource
+      resourceInterface: Amazon Linux v1 Resource Interface
+      operation: Provision
+      parameters:
+      - name: EventProfile
+        defaultValue: ${parameter.EventProfile}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: ScheduleProfile
+        defaultValue: ${parameter.ScheduleProfile}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: CostCenter
+        defaultValue: ${parameter.CostCenter}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: StackName
+        defaultValue: ${parameter.StackName}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: CloudAccount
+        defaultValue: ${parameter.CloudAccount}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: ResourceGroupName
+        defaultValue: ${parameter.ResourceGroupName}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: LeaseEndDate
+        defaultValue: ${parameter.LeaseEndDate}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: AdditionalAPIParameters
+        defaultValue: ${parameter.AdditionalAPIParameters}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: CreateResourceGroup
+        defaultValue: ${parameter.CreateResourceGroup}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: BusinessService
+        defaultValue: ${parameter.BusinessService}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: StartDate
+        defaultValue: ${parameter.StartDate}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: Project
+        defaultValue: ${parameter.Project}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: Application
+        defaultValue: ${parameter.Application}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: BillingCode
+        defaultValue: ${parameter.BillingCode}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: WorkloadConfigProviderType
+        defaultValue: ${parameter.WorkloadConfigProviderType}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: Location
+        defaultValue: ${parameter.Location}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: ResourceGroup
+        defaultValue: ${parameter.ResourceGroup}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: ScheduleTimeZone
+        defaultValue: ${parameter.ScheduleTimeZone}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: WorkloadConfigProvider
+        defaultValue: ${parameter.WorkloadConfigProvider}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: SubscriptionId
+        defaultValue: ${parameter.SubscriptionId}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: UserGroup
+        defaultValue: ${parameter.UserGroup}
+        typeOfMap: SingleMap
+        useInOperation: true
+      depends: Amazon Linux v1.Provision
+    globalProperties:
+    - name: LeaseEndDate
+      opUniqueId: '7930'
+      mandatory: false
+      order: 452
+    - name: BusinessService
+      opUniqueId: '7930'
+      mandatory: false
+      order: 934
+    - name: StackName
+      opUniqueId: '7930'
+      mandatory: true
+      order: 199
+    - name: CloudAccount
+      opUniqueId: '7930'
+      mandatory: true
+      order: 87
+    - name: Amazon_Linux_v1_InstanceType
+      opUniqueId: '8388'
+      mandatory: true
+      order: 33
+    - name: Application
+      opUniqueId: '7930'
+      mandatory: false
+      order: 671
+    - name: UserGroup
+      opUniqueId: '7930'
+      mandatory: true
+      order: 270
+    - name: Location
+      opUniqueId: '7930'
+      mandatory: true
+      order: 138
+    - name: ScheduleTimeZone
+      opUniqueId: '7930'
+      mandatory: true
+      order: 550
+    - name: Amazon_Linux_v1_KeyName
+      opUniqueId: '8388'
+      mandatory: true
+      order: 11
+    - name: Amazon_Linux_v1_SSHLocation
+      opUniqueId: '8388'
+      mandatory: true
+      order: 56
+    - name: ScheduleProfile
+      opUniqueId: '7930'
+      mandatory: true
+      order: 356
+    - name: CostCenter
+      opUniqueId: '7930'
+      mandatory: false
+      order: 792
+    - name: AdditionalAPIParameters
+      opUniqueId: '7930'
+      mandatory: false
+      order: 1944
+    formBehaviors:
+    - aliasName: Amazon Linux v1
+      catalogName: Amazon Linux v1
+      createCatalog: true
+      catalogProperties:
+      - catalogProperty: Amazon_Linux_v1_KeyName
+        name: Amazon_Linux_v1_KeyName
+        parameterTypeName: String
+        defaultValue: admin-Default
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::CloudKeyPair.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Amazon Linux V 1 Key Name
+        displayOrder: 11
+        visibility: true
+        regex: ''
+        opUniqueId: '8388'
+        formUIGroup: Provision
+        readonly: false
+        mandatory: true
+      - catalogProperty: Amazon_Linux_v1_InstanceType
+        name: Amazon_Linux_v1_InstanceType
+        parameterTypeName: String
+        defaultValue: t2.micro
+        dataSource: CSVList
+        dataSourceValue: t1.micro,t2.nano,t2.micro,t2.small,t2.medium,t2.large,m1.small,m1.medium,m1.large,m1.xlarge,m2.xlarge,m2.2xlarge,m2.4xlarge,m3.medium,m3.large,m3.xlarge,m3.2xlarge,m4.large,m4.xlarge,m4.2xlarge,m4.4xlarge,m4.10xlarge,c1.medium,c1.xlarge,c3.large,c3.xlarge,c3.2xlarge,c3.4xlarge,c3.8xlarge,c4.large,c4.xlarge,c4.2xlarge,c4.4xlarge,c4.8xlarge,g2.2xlarge,g2.8xlarge,r3.large,r3.xlarge,r3.2xlarge,r3.4xlarge,r3.8xlarge,i2.xlarge,i2.2xlarge,i2.4xlarge,i2.8xlarge,d2.xlarge,d2.2xlarge,d2.4xlarge,d2.8xlarge,hi1.4xlarge,hs1.8xlarge,cr1.8xlarge,cc2.8xlarge,cg1.4xlarge
+        uiDataType: Select
+        helpText: ''
+        displayName: Amazon Linux V 1 Instance Type
+        displayOrder: 33
+        visibility: true
+        regex: ''
+        opUniqueId: '8388'
+        formUIGroup: Provision
+        readonly: false
+        mandatory: true
+      - catalogProperty: Amazon_Linux_v1_SSHLocation
+        name: Amazon_Linux_v1_SSHLocation
+        parameterTypeName: String
+        defaultValue: 0.0.0.0/0
+        dataSource: Text
+        dataSourceValue: ''
+        uiDataType: TextBox
+        helpText: ''
+        displayName: Amazon Linux V 1 SSH Location
+        displayOrder: 56
+        visibility: true
+        regex: (\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})/(\d{1,2})
+        opUniqueId: '8388'
+        formUIGroup: Provision
+        readonly: false
+        mandatory: true
+      - catalogProperty: CloudAccount
+        name: CloudAccount
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::CloudAccountPool.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Cloud Account
+        displayOrder: 87
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: true
+      - catalogProperty: Location
+        name: Location
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::CloudLocationPool.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Location
+        displayOrder: 138
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: true
+      - catalogProperty: StackName
+        name: StackName
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Text
+        dataSourceValue: ''
+        uiDataType: TextBox
+        helpText: ''
+        displayName: Stack Name
+        displayOrder: 199
+        visibility: true
+        regex: ^.{0,100}$
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: true
+        mandatory: true
+      - catalogProperty: UserGroup
+        name: UserGroup
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::UserGroupPool.GroupsUserBelongsTo
+        uiDataType: Select
+        helpText: ''
+        displayName: User Group
+        displayOrder: 270
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: true
+      - catalogProperty: ScheduleProfile
+        name: ScheduleProfile
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::ScheduleProfilePool.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Schedule Profile
+        displayOrder: 356
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: true
+      - catalogProperty: LeaseEndDate
+        name: LeaseEndDate
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Text
+        dataSourceValue: ''
+        uiDataType: DateTime
+        helpText: ''
+        displayName: Lease End Date
+        displayOrder: 452
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: true
+        mandatory: false
+      - catalogProperty: ScheduleTimeZone
+        name: ScheduleTimeZone
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::ScheduleTimeZonePool.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Schedule Time Zone
+        displayOrder: 550
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: true
+      - catalogProperty: Application
+        name: Application
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::ApplicationPool.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Application
+        displayOrder: 671
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: false
+      - catalogProperty: CostCenter
+        name: CostCenter
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::CostCenterPool.UserCostCenter
+        uiDataType: Select
+        helpText: ''
+        displayName: Cost Center
+        displayOrder: 792
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: false
+      - catalogProperty: BusinessService
+        name: BusinessService
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::BusinessServicePool.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Business Service
+        displayOrder: 934
+        visibility: true
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: false
+      - catalogProperty: AdditionalAPIParameters
+        name: AdditionalAPIParameters
+        parameterTypeName: Object
+        defaultValue: ''
+        dataSource: Text
+        dataSourceValue: ''
+        uiDataType: TextBox
+        helpText: ''
+        displayName: Additional API Parameters
+        displayOrder: 1944
+        visibility: false
+        regex: ''
+        opUniqueId: '7930'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: false
+      catalogItem:
+        name: Amazon Linux v1
+        type: item
+        category: Compute
+        description: &lt;p&gt;Amazon Linux&lt;/p&gt;
+        shortDescription: Amazon Linux
+        variables:
+        - name: cloudTaskWorkflowInput
+          type: '6'
+          questionText: cloudTaskWorkflowInput
+          helpText: ''
+          defaultValue: ''
+          mandatory: false
+          active: true
+          showHelp: false
+          order: 0
+        scriptClients:
+        - name: Default Form Load
+          type: onLoad
+          uiType: '10'
+          script: ' function onLoad() { BlueprintSCClient.prefillForm(''sn_cmp.DynamicFormAjax'',g_form.getUniqueValue(),
+            g_form);}'
+          active: true
+        variableSets:
+        - name: Provision
+          description: ''
+          title: Provision
+          layout: 2across
+          order: 1
+          variables:
+          - name: Amazon_Linux_v1_KeyName
+            type: '18'
+            questionText: Amazon Linux V 1 Key Name
+            helpText: ''
+            defaultValue: admin-Default
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 11
+          - name: Amazon_Linux_v1_InstanceType
+            type: '18'
+            questionText: Amazon Linux V 1 Instance Type
+            helpText: ''
+            defaultValue: t2.micro
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 33
+          - name: Amazon_Linux_v1_SSHLocation
+            type: '6'
+            questionText: Amazon Linux V 1 SSH Location
+            helpText: ''
+            defaultValue: 0.0.0.0/0
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 56
+          clientScripts:
+          - name: Validate Amazon_Linux_v1_InstanceType
+            type: onChange
+            uiType: '10'
+            variableName: Amazon_Linux_v1_InstanceType
+            variableSysId: 26545208db338300d0e45b3e5e9619e4
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'Amazon_Linux_v1_InstanceType';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"26545208db338300d0e45b3e5e9619e4", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"26545208db338300d0e45b3e5e9619e4", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate Amazon_Linux_v1_KeyName
+            type: onChange
+            uiType: '10'
+            variableName: Amazon_Linux_v1_KeyName
+            variableSysId: 1e545208db338300d0e45b3e5e9619dd
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'Amazon_Linux_v1_KeyName';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"1e545208db338300d0e45b3e5e9619dd", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"1e545208db338300d0e45b3e5e9619dd", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate Amazon_Linux_v1_SSHLocation
+            type: onChange
+            uiType: '10'
+            variableName: Amazon_Linux_v1_SSHLocation
+            variableSysId: 2e545208db338300d0e45b3e5e9619ea
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'Amazon_Linux_v1_SSHLocation';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"2e545208db338300d0e45b3e5e9619ea", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"2e545208db338300d0e45b3e5e9619ea", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: On submit validation
+            type: onSubmit
+            uiType: '10'
+            script: |-
+              // System generated script, please do not change
+              function onSubmit() {
+               return BlueprintSCClient.beforeSubmitCloudRsrcTemplate(g_form);
+              }
+            active: true
+        - name: General Info
+          description: ''
+          title: General Info
+          layout: 2across
+          order: 0
+          variables:
+          - name: LeaseEndDate
+            type: '10'
+            questionText: Lease End Date
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 452
+          - name: ScheduleProfile
+            type: '18'
+            questionText: Schedule Profile
+            helpText: ''
+            defaultValue: ''
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 356
+          - name: CloudAccount
+            type: '18'
+            questionText: Cloud Account
+            helpText: ''
+            defaultValue: ''
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 87
+          - name: ScheduleTimeZone
+            type: '18'
+            questionText: Schedule Time Zone
+            helpText: ''
+            defaultValue: ''
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 550
+          - name: Application
+            type: '18'
+            questionText: Application
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 671
+          - name: StackName
+            type: '6'
+            questionText: Stack Name
+            helpText: ''
+            defaultValue: ''
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 199
+          - name: Location
+            type: '18'
+            questionText: Location
+            helpText: ''
+            defaultValue: ''
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 138
+          - name: CostCenter
+            type: '18'
+            questionText: Cost Center
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 792
+          - name: UserGroup
+            type: '18'
+            questionText: User Group
+            helpText: ''
+            defaultValue: ''
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 270
+          - name: AdditionalAPIParameters
+            type: '2'
+            questionText: Additional API Parameters
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 1944
+          - name: BusinessService
+            type: '18'
+            questionText: Business Service
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 934
+          clientScripts:
+          - name: Validate ScheduleProfile
+            type: onChange
+            uiType: '10'
+            variableName: ScheduleProfile
+            variableSysId: 2a549208db338300d0e45b3e5e96190b
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'ScheduleProfile';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"2a549208db338300d0e45b3e5e96190b", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"2a549208db338300d0e45b3e5e96190b", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate LeaseEndDate
+            type: onChange
+            uiType: '10'
+            variableName: LeaseEndDate
+            variableSysId: 22549208db338300d0e45b3e5e961912
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'LeaseEndDate';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"22549208db338300d0e45b3e5e961912", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"22549208db338300d0e45b3e5e961912", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate ScheduleTimeZone
+            type: onChange
+            uiType: '10'
+            variableName: ScheduleTimeZone
+            variableSysId: 6a549208db338300d0e45b3e5e961918
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'ScheduleTimeZone';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"6a549208db338300d0e45b3e5e961918", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"6a549208db338300d0e45b3e5e961918", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate CloudAccount
+            type: onChange
+            uiType: '10'
+            variableName: CloudAccount
+            variableSysId: 66545208db338300d0e45b3e5e9619f1
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'CloudAccount';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"66545208db338300d0e45b3e5e9619f1", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"66545208db338300d0e45b3e5e9619f1", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate Application
+            type: onChange
+            uiType: '10'
+            variableName: Application
+            variableSysId: 6a549208db338300d0e45b3e5e96192b
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'Application';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"6a549208db338300d0e45b3e5e96192b", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"6a549208db338300d0e45b3e5e96192b", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate StackName
+            type: onChange
+            uiType: '10'
+            variableName: StackName
+            variableSysId: a6545208db338300d0e45b3e5e9619fe
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'StackName';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"a6545208db338300d0e45b3e5e9619fe", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"a6545208db338300d0e45b3e5e9619fe", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate Location
+            type: onChange
+            uiType: '10'
+            variableName: Location
+            variableSysId: ae545208db338300d0e45b3e5e9619f7
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'Location';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"ae545208db338300d0e45b3e5e9619f7", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"ae545208db338300d0e45b3e5e9619f7", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate CostCenter
+            type: onChange
+            uiType: '10'
+            variableName: CostCenter
+            variableSysId: b2549208db338300d0e45b3e5e961932
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'CostCenter';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"b2549208db338300d0e45b3e5e961932", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"b2549208db338300d0e45b3e5e961932", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate UserGroup
+            type: onChange
+            uiType: '10'
+            variableName: UserGroup
+            variableSysId: ee549208db338300d0e45b3e5e961904
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'UserGroup';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"ee549208db338300d0e45b3e5e961904", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"ee549208db338300d0e45b3e5e961904", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate BusinessService
+            type: onChange
+            uiType: '10'
+            variableName: BusinessService
+            variableSysId: fa549208db338300d0e45b3e5e961938
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'BusinessService';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"fa549208db338300d0e45b3e5e961938", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"fa549208db338300d0e45b3e5e961938", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: On submit validation
+            type: onSubmit
+            uiType: '10'
+            script: |-
+              // System generated script, please do not change
+              function onSubmit() {
+               return BlueprintSCClient.beforeSubmitCloudRsrcTemplate(g_form);
+              }
+            active: true
+          - name: Validate AdditionalAPIParameters
+            type: onChange
+            uiType: '10'
+            variableName: AdditionalAPIParameters
+            variableSysId: f2549208db338300d0e45b3e5e96193f
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'AdditionalAPIParameters';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"f2549208db338300d0e45b3e5e96193f", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"f2549208db338300d0e45b3e5e96193f", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+        active: true
+      formEvents:
+      - name: FieldChange
+        type: FieldChange
+        rules:
+        - name: Reload Location
+          order: 400
+          sourceAttribute: CloudAccount
+          actions:
+          - name: Reload Location
+            dataSource: Reload Cloud Location
+            type: Reload
+            targetAttributeName: Location
+            status: ''
+            value: ''
+            order: 100
+            parameterList:
+            - key: CloudAccount
+              value: CloudAccount
+          conditions: []
+        - name: TriggerChangeEvent Location
+          order: 500
+          sourceAttribute: CloudAccount
+          actions:
+          - name: TriggerChangeEvent Location
+            dataSource: ''
+            type: TriggerChangeEvent
+            targetAttributeName: Location
+            status: ''
+            value: ''
+            order: 100
+            parameterList: []
+          conditions: []
+        - name: TriggerChangeEvent UserGroup
+          order: 600
+          sourceAttribute: Location
+          actions:
+          - name: TriggerChangeEvent UserGroup
+            dataSource: ''
+            type: TriggerChangeEvent
+            targetAttributeName: UserGroup
+            status: ''
+            value: ''
+            order: 100
+            parameterList: []
+          conditions: []
+        - name: Reload Quota
+          order: 700
+          sourceAttribute: UserGroup
+          actions:
+          - name: Reload Quota
+            dataSource: Check Quota
+            type: Reload
+            targetAttributeName: Quota
+            status: ''
+            value: ''
+            order: 100
+            parameterList:
+            - key: Location
+              value: Location
+            - key: CloudAccount
+              value: CloudAccount
+          conditions: []
+      - name: FormLoad
+        type: FormLoad
+        rules:
+        - name: Reload CloudAccount
+          order: 100
+          sourceAttribute: ''
+          actions:
+          - name: Reload CloudAccount
+            dataSource: Reload Cloud Account
+            type: Reload
+            targetAttributeName: CloudAccount
+            status: ''
+            value: ''
+            order: 100
+            parameterList: []
+          conditions: []
+        - name: TriggerChangeEvent CloudAccount
+          order: 200
+          sourceAttribute: ''
+          actions:
+          - name: TriggerChangeEvent CloudAccount
+            dataSource: ''
+            type: TriggerChangeEvent
+            targetAttributeName: CloudAccount
+            status: ''
+            value: ''
+            order: 100
+            parameterList: []
+          conditions: []
+        - name: Reload Quota
+          order: 300
+          sourceAttribute: ''
+          actions:
+          - name: Reload Quota
+            dataSource: Check Quota
+            type: Reload
+            targetAttributeName: Quota
+            status: ''
+            value: ''
+            order: 100
+            parameterList:
+            - key: CloudAccount
+              value: CloudAccount
+            - key: Location
+              value: Location
+          conditions: []
+        - name: Reload -  Quota
+          order: 1000
+          sourceAttribute: ''
+          actions:
+          - name: Reload Quota
+            dataSource: Check Quota
+            type: Reload
+            targetAttributeName: Quota
+            status: ''
+            value: ''
+            order: 100
+            parameterList:
+            - key: CloudAccount
+              value: CloudAccount
+            - key: Location
+              value: Location
+          conditions: []
+      formUIGroups:
+      - name: General Info
+        displayOrder: '0'
+      - name: Provision
+        displayOrder: '1'
+  - operation: Stop
+    operationType: STOP
+    resourceOperations:
+    - name: Amazon Linux v1.Stop
+      order: '1'
+      resourceBlock: Amazon Linux v1
+      resourceInterface: Amazon Linux v1 Interface
+      operation: Stop
+      parameters:
+      - name: CloudAccount
+        defaultValue: ${parameter.CloudAccount}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: StackID
+        defaultValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: Location
+        defaultValue: ${parameter.Location}
+        typeOfMap: SingleMap
+        useInOperation: false
+      depends: ''
+    - name: Blueprint Container Resource.Stop
+      order: '2'
+      resourceBlock: Amazon Linux v1 Blueprint Resource
+      resourceInterface: Amazon Linux v1 Resource Interface
+      operation: Stop
+      depends: Amazon Linux v1.Stop
+    globalProperties:
+    - name: Amazon_Linux_v1_StackID
+      opUniqueId: '8000'
+      mandatory: true
+      order: 12
+    formBehaviors:
+    - aliasName: Amazon Linux v1 Stop
+      catalogName: Stop
+      createCatalog: true
+      catalogProperties:
+      - catalogProperty: Amazon_Linux_v1_StackID
+        name: Amazon_Linux_v1_StackID
+        parameterTypeName: String
+        defaultValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+        dataSource: Text
+        dataSourceValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+        uiDataType: TextBox
+        helpText: ''
+        displayName: Amazon Linux V 1 Stack ID
+        displayOrder: 12
+        visibility: true
+        regex: ''
+        opUniqueId: '8000'
+        formUIGroup: Stop
+        readonly: false
+        mandatory: true
+      catalogItem:
+        name: Stop
+        type: item
+        category: Compute
+        description: CMP Blueprint
+        shortDescription: Are you sure you want to perform this operation?
+        variables:
+        - name: cloudTaskWorkflowInput
+          type: '6'
+          questionText: cloudTaskWorkflowInput
+          helpText: ''
+          defaultValue: ''
+          mandatory: false
+          active: true
+          showHelp: false
+          order: 0
+        scriptClients: []
+        variableSets:
+        - name: Lifecycle Operation Parameters
+          description: ''
+          title: Lifecycle Operation Parameters
+          layout: 2across
+          order: 2000
+          variables:
+          - name: Amazon_Linux_v1_StackID
+            type: '6'
+            questionText: Amazon Linux V 1 Stack ID
+            helpText: ''
+            defaultValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 12
+          - name: resourceId
+            type: '6'
+            questionText: resourceId
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          - name: operationName
+            type: '6'
+            questionText: operationName
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          clientScripts:
+          - name: Validate Amazon_Linux_v1_StackID
+            type: onChange
+            uiType: '10'
+            variableName: Amazon_Linux_v1_StackID
+            variableSysId: 63fe4bfbdb9b47009769df7b5e96194e
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'Amazon_Linux_v1_StackID';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"63fe4bfbdb9b47009769df7b5e96194e", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"63fe4bfbdb9b47009769df7b5e96194e", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Hide operation variables
+            type: onLoad
+            uiType: '10'
+            script: |-
+              // System generated script, please do not change
+              function onLoad() {
+                g_form.setDisplay('resourceId', false);
+                g_form.setDisplay('operationName', false);
+              }
+            active: true
+        active: true
+      formEvents:
+      - name: FormLoad
+        type: FormLoad
+        rules: []
+      - name: FieldChange
+        type: FieldChange
+        rules: []
+      formUIGroups:
+      - name: General Info
+        displayOrder: '0'
+      - name: Stop
+        displayOrder: '1'
+  - operation: Deprovision
+    operationType: DEPROVISION
+    resourceOperations:
+    - name: Blueprint Container Resource.Deprovision
+      order: '1'
+      resourceBlock: Amazon Linux v1 Blueprint Resource
+      resourceInterface: Amazon Linux v1 Resource Interface
+      operation: Deprovision
+      depends: ''
+    - name: Amazon Linux v1.Deprovision
+      order: '2'
+      resourceBlock: Amazon Linux v1
+      resourceInterface: Amazon Linux v1 Interface
+      operation: Deprovision
+      parameters:
+      - name: StackID
+        defaultValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: Location
+        defaultValue: ${parameter.Location}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: CloudAccount
+        defaultValue: ${parameter.CloudAccount}
+        typeOfMap: SingleMap
+        useInOperation: false
+      depends: Blueprint Container Resource.Deprovision
+    formBehaviors:
+    - aliasName: Amazon Linux v1 Deprovision
+      catalogName: Deprovision
+      createCatalog: true
+      catalogItem:
+        name: Deprovision
+        type: item
+        category: Compute
+        description: CMP Blueprint
+        shortDescription: Are you sure you want to perform this operation?
+        variables:
+        - name: cloudTaskWorkflowInput
+          type: '6'
+          questionText: cloudTaskWorkflowInput
+          helpText: ''
+          defaultValue: ''
+          mandatory: false
+          active: true
+          showHelp: false
+          order: 0
+        scriptClients: []
+        variableSets:
+        - name: Lifecycle Operation Parameters
+          description: ''
+          title: Lifecycle Operation Parameters
+          layout: 2across
+          order: 2000
+          variables:
+          - name: operationName
+            type: '6'
+            questionText: operationName
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          - name: resourceId
+            type: '6'
+            questionText: resourceId
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          clientScripts:
+          - name: Hide operation variables
+            type: onLoad
+            uiType: '10'
+            script: |-
+              // System generated script, please do not change
+              function onLoad() {
+                g_form.setDisplay('resourceId', false);
+                g_form.setDisplay('operationName', false);
+              }
+            active: true
+        active: true
+      formEvents:
+      - name: FormLoad
+        type: FormLoad
+        rules: []
+      - name: FieldChange
+        type: FieldChange
+        rules: []
+      formUIGroups:
+      - name: General Info
+        displayOrder: '0'
+      - name: Deprovision
+        displayOrder: '1'
+  - operation: ModifyLease
+    operationType: RECONFIGURE
+    resourceOperations:
+    - name: Blueprint Container Resource.ModifyLease
+      order: '1'
+      resourceBlock: Amazon Linux v1 Blueprint Resource
+      resourceInterface: Amazon Linux v1 Resource Interface
+      operation: ModifyLease
+      parameters:
+      - name: LeaseEndDate
+        defaultValue: ${parameter.LeaseEndDate}
+        typeOfMap: SingleMap
+        useInOperation: true
+      depends: ''
+    globalProperties:
+    - name: LeaseEndDate
+      opUniqueId: '9268'
+      mandatory: false
+      order: 86
+    formBehaviors:
+    - aliasName: Amazon Linux v1 ModifyLease
+      catalogName: ModifyLease
+      createCatalog: true
+      catalogProperties:
+      - catalogProperty: LeaseEndDate
+        name: LeaseEndDate
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Text
+        dataSourceValue: ''
+        uiDataType: DateTime
+        helpText: ''
+        displayName: Lease End Date
+        displayOrder: 86
+        visibility: true
+        regex: ''
+        opUniqueId: '9268'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: false
+      catalogItem:
+        name: ModifyLease
+        type: item
+        category: Compute
+        description: CMP Blueprint
+        shortDescription: ''
+        variables:
+        - name: cloudTaskWorkflowInput
+          type: '6'
+          questionText: cloudTaskWorkflowInput
+          helpText: ''
+          defaultValue: ''
+          mandatory: false
+          active: true
+          showHelp: false
+          order: 0
+        scriptClients: []
+        variableSets:
+        - name: Lifecycle Operation Parameters
+          description: ''
+          title: Lifecycle Operation Parameters
+          layout: 2across
+          order: 2000
+          variables:
+          - name: LeaseEndDate
+            type: '10'
+            questionText: Lease End Date
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 86
+          - name: resourceId
+            type: '6'
+            questionText: resourceId
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          - name: operationName
+            type: '6'
+            questionText: operationName
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          clientScripts:
+          - name: Validate LeaseEndDate
+            type: onChange
+            uiType: '10'
+            variableName: LeaseEndDate
+            variableSysId: 3ffe8bfbdb9b47009769df7b5e96192c
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'LeaseEndDate';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"3ffe8bfbdb9b47009769df7b5e96192c", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"3ffe8bfbdb9b47009769df7b5e96192c", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Hide operation variables
+            type: onLoad
+            uiType: '10'
+            script: |-
+              // System generated script, please do not change
+              function onLoad() {
+                g_form.setDisplay('resourceId', false);
+                g_form.setDisplay('operationName', false);
+              }
+            active: true
+        active: true
+      formEvents:
+      - name: FormLoad
+        type: FormLoad
+        rules: []
+      - name: FieldChange
+        type: FieldChange
+        rules: []
+      formUIGroups:
+      - name: ModifyLease
+        displayOrder: '1'
+      - name: General Info
+        displayOrder: '0'
+  - operation: Start
+    operationType: START
+    resourceOperations:
+    - name: Amazon Linux v1.Start
+      order: '1'
+      resourceBlock: Amazon Linux v1
+      resourceInterface: Amazon Linux v1 Interface
+      operation: Start
+      parameters:
+      - name: Location
+        defaultValue: ${parameter.Location}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: CloudAccount
+        defaultValue: ${parameter.CloudAccount}
+        typeOfMap: SingleMap
+        useInOperation: false
+      - name: StackID
+        defaultValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+        typeOfMap: SingleMap
+        useInOperation: true
+      depends: ''
+    - name: Blueprint Container Resource.Start
+      order: '2'
+      resourceBlock: Amazon Linux v1 Blueprint Resource
+      resourceInterface: Amazon Linux v1 Resource Interface
+      operation: Start
+      depends: Amazon Linux v1.Start
+    globalProperties:
+    - name: Amazon_Linux_v1_StackID
+      opUniqueId: '7022'
+      mandatory: true
+      order: 12
+    formBehaviors:
+    - aliasName: Amazon Linux v1 Start
+      catalogName: Start
+      createCatalog: true
+      catalogProperties:
+      - catalogProperty: Amazon_Linux_v1_StackID
+        name: Amazon_Linux_v1_StackID
+        parameterTypeName: String
+        defaultValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+        dataSource: Text
+        dataSourceValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+        uiDataType: TextBox
+        helpText: ''
+        displayName: Amazon Linux V 1 Stack ID
+        displayOrder: 12
+        visibility: false
+        regex: ''
+        opUniqueId: '7022'
+        formUIGroup: Start
+        readonly: false
+        mandatory: true
+      catalogItem:
+        name: Start
+        type: item
+        category: Compute
+        description: CMP Blueprint
+        shortDescription: Are you sure you want to perform this operation?
+        variables:
+        - name: cloudTaskWorkflowInput
+          type: '6'
+          questionText: cloudTaskWorkflowInput
+          helpText: ''
+          defaultValue: ''
+          mandatory: false
+          active: true
+          showHelp: false
+          order: 0
+        scriptClients: []
+        variableSets:
+        - name: Lifecycle Operation Parameters
+          description: ''
+          title: Lifecycle Operation Parameters
+          layout: 2across
+          order: 2000
+          variables:
+          - name: resourceId
+            type: '6'
+            questionText: resourceId
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          - name: Amazon_Linux_v1_StackID
+            type: '6'
+            questionText: Amazon Linux V 1 Stack ID
+            helpText: ''
+            defaultValue: ${Stack.items[Amazon Linux v1].attributes[object_id]}
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 12
+          - name: operationName
+            type: '6'
+            questionText: operationName
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          clientScripts:
+          - name: Validate Amazon_Linux_v1_StackID
+            type: onChange
+            uiType: '10'
+            variableName: Amazon_Linux_v1_StackID
+            variableSysId: 53337e5bdb2b0300d0e45b3e5e9619dc
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'Amazon_Linux_v1_StackID';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"53337e5bdb2b0300d0e45b3e5e9619dc", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"53337e5bdb2b0300d0e45b3e5e9619dc", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Hide operation variables
+            type: onLoad
+            uiType: '10'
+            script: |-
+              // System generated script, please do not change
+              function onLoad() {
+                g_form.setDisplay('resourceId', false);
+                g_form.setDisplay('operationName', false);
+              }
+            active: true
+        active: true
+      formEvents:
+      - name: FormLoad
+        type: FormLoad
+        rules: []
+      - name: FieldChange
+        type: FieldChange
+        rules: []
+      formUIGroups:
+      - name: General Info
+        displayOrder: '0'
+      - name: Start
+        displayOrder: '1'
+  - operation: Cleanup
+    operationType: RECONFIGURE
+    resourceOperations:
+    - name: Blueprint Container Resource.Cleanup
+      order: '1'
+      condition: '''${Stack.items[Blueprint Container Resource].status}''==''2'''
+      resourceBlock: Amazon Linux v1 Blueprint Resource
+      resourceInterface: Amazon Linux v1 Resource Interface
+      operation: Cleanup
+      depends: ''
+    formBehaviors:
+    - aliasName: Amazon Linux v1 Cleanup
+      catalogName: Cleanup
+      createCatalog: true
+      catalogItem:
+        name: Cleanup
+        type: item
+        category: Compute
+        description: CMP Blueprint
+        shortDescription: Are you sure you want to perform this operation?
+        variables:
+        - name: cloudTaskWorkflowInput
+          type: '6'
+          questionText: cloudTaskWorkflowInput
+          helpText: ''
+          defaultValue: ''
+          mandatory: false
+          active: true
+          showHelp: false
+          order: 0
+        scriptClients: []
+        variableSets:
+        - name: Lifecycle Operation Parameters
+          description: ''
+          title: Lifecycle Operation Parameters
+          layout: 2across
+          order: 2000
+          variables:
+          - name: resourceId
+            type: '6'
+            questionText: resourceId
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          - name: operationName
+            type: '6'
+            questionText: operationName
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          clientScripts:
+          - name: Hide operation variables
+            type: onLoad
+            uiType: '10'
+            script: |-
+              // System generated script, please do not change
+              function onLoad() {
+                g_form.setDisplay('resourceId', false);
+                g_form.setDisplay('operationName', false);
+              }
+            active: true
+        active: true
+      formEvents:
+      - name: FieldChange
+        type: FieldChange
+        rules: []
+      - name: FormLoad
+        type: FormLoad
+        rules: []
+      formUIGroups:
+      - name: Cleanup
+        displayOrder: '1'
+      - name: General Info
+        displayOrder: '0'
+  - operation: ModifySchedule
+    operationType: RECONFIGURE
+    resourceOperations:
+    - name: Blueprint Container Resource.ModifySchedule
+      order: '1'
+      resourceBlock: Amazon Linux v1 Blueprint Resource
+      resourceInterface: Amazon Linux v1 Resource Interface
+      operation: ModifySchedule
+      parameters:
+      - name: ScheduleProfile
+        defaultValue: ${parameter.ScheduleProfile}
+        typeOfMap: SingleMap
+        useInOperation: true
+      - name: ScheduleTimeZone
+        defaultValue: ${parameter.ScheduleTimeZone}
+        typeOfMap: SingleMap
+        useInOperation: true
+      depends: ''
+    globalProperties:
+    - name: ScheduleTimeZone
+      opUniqueId: '7371'
+      mandatory: true
+      order: 174
+    - name: ScheduleProfile
+      opUniqueId: '7371'
+      mandatory: true
+      order: 76
+    formBehaviors:
+    - aliasName: Amazon Linux v1 ModifySchedule
+      catalogName: ModifySchedule
+      createCatalog: true
+      catalogProperties:
+      - catalogProperty: ScheduleProfile
+        name: ScheduleProfile
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::ScheduleProfilePool.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Schedule Profile
+        displayOrder: 76
+        visibility: true
+        regex: ''
+        opUniqueId: '7371'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: true
+      - catalogProperty: ScheduleTimeZone
+        name: ScheduleTimeZone
+        parameterTypeName: String
+        defaultValue: ''
+        dataSource: Pools
+        dataSourceValue: ServiceNow::Pools::ScheduleTimeZonePool.All
+        uiDataType: Select
+        helpText: ''
+        displayName: Schedule Time Zone
+        displayOrder: 174
+        visibility: true
+        regex: ''
+        opUniqueId: '7371'
+        formUIGroup: General Info
+        readonly: false
+        mandatory: true
+      catalogItem:
+        name: ModifySchedule
+        type: item
+        category: Compute
+        description: CMP Blueprint
+        shortDescription: ''
+        variables:
+        - name: cloudTaskWorkflowInput
+          type: '6'
+          questionText: cloudTaskWorkflowInput
+          helpText: ''
+          defaultValue: ''
+          mandatory: false
+          active: true
+          showHelp: false
+          order: 0
+        scriptClients: []
+        variableSets:
+        - name: Lifecycle Operation Parameters
+          description: ''
+          title: Lifecycle Operation Parameters
+          layout: 2across
+          order: 2000
+          variables:
+          - name: ScheduleTimeZone
+            type: '18'
+            questionText: Schedule Time Zone
+            helpText: ''
+            defaultValue: ''
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 174
+          - name: operationName
+            type: '6'
+            questionText: operationName
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          - name: ScheduleProfile
+            type: '18'
+            questionText: Schedule Profile
+            helpText: ''
+            defaultValue: ''
+            mandatory: true
+            active: true
+            showHelp: false
+            order: 76
+          - name: resourceId
+            type: '6'
+            questionText: resourceId
+            helpText: ''
+            defaultValue: ''
+            mandatory: false
+            active: true
+            showHelp: false
+            order: 0
+          clientScripts:
+          - name: Validate ScheduleProfile
+            type: onChange
+            uiType: '10'
+            variableName: ScheduleProfile
+            variableSysId: 6c0fcbfbdb9b47009769df7b5e961902
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'ScheduleProfile';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"6c0fcbfbdb9b47009769df7b5e961902", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"6c0fcbfbdb9b47009769df7b5e961902", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Validate ScheduleTimeZone
+            type: onChange
+            uiType: '10'
+            variableName: ScheduleTimeZone
+            variableSysId: 200fcbfbdb9b47009769df7b5e961909
+            script: |-
+              // System generated script, please do not change
+              function onChange(control, oldValue, newValue, isLoading) {
+              var varName = 'ScheduleTimeZone';
+               BlueprintSCClient.validateCatItemParameterVariables('sn_cmp.BlueprintSCAjax',"200fcbfbdb9b47009769df7b5e961909", oldValue, newValue, isLoading, g_form);
+              if( oldValue != newValue ) {
+               BlueprintSCClient.executeFieldChange('sn_cmp.DynamicFormAjax',"200fcbfbdb9b47009769df7b5e961909", oldValue, newValue, isLoading, g_form,g_form.getUniqueValue());
+              }
+              }
+            active: true
+          - name: Hide operation variables
+            type: onLoad
+            uiType: '10'
+            script: |-
+              // System generated script, please do not change
+              function onLoad() {
+                g_form.setDisplay('resourceId', false);
+                g_form.setDisplay('operationName', false);
+              }
+            active: true
+        active: true
+      formEvents:
+      - name: FormLoad
+        type: FormLoad
+        rules: []
+      - name: FieldChange
+        type: FieldChange
+        rules: []
+      formUIGroups:
+      - name: General Info
+        displayOrder: '0'
+      - name: ModifySchedule
+        displayOrder: '1'
+</intent>
+        <stage display_value="Default">a74383b20b2222003ad5c73ef6673a1d</stage>
+        <sys_class_name>sn_cmp_bp_stage_model</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:03:58</sys_created_on>
+        <sys_id>e64390aedb3197008574f4eb0c961909</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_model_e64390aedb3197008574f4eb0c961909</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:03:59</sys_updated_on>
+    </sn_cmp_bp_stage_model>
+</record_update>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_resource_dep">
+    <sn_cmp_bp_stage_resource_dep action="INSERT_OR_UPDATE">
+        <bp_stage_model display_value="">e64390aedb3197008574f4eb0c961909</bp_stage_model>
+        <deployment_type>1</deployment_type>
+        <endpoint/>
+        <guest_association_name>Blueprint Container Resource</guest_association_name>
+        <guest_resource display_value="Amazon Linux v1 Blueprint Resource">894310aedb3197008574f4eb0c961997</guest_resource>
+        <host_association_name>Amazon Linux v1</host_association_name>
+        <host_resource display_value="Amazon Linux v1">7123546edb3197008574f4eb0c96194a</host_resource>
+        <sys_class_name>sn_cmp_bp_stage_resource_dep</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:03:59</sys_created_on>
+        <sys_id>724390aedb3197008574f4eb0c961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_resource_dep_724390aedb3197008574f4eb0c961928</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:03:59</sys_updated_on>
+    </sn_cmp_bp_stage_resource_dep>
+</record_update>

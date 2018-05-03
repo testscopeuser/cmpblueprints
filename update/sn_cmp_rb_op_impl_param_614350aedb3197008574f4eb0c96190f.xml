@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_rb_op_impl_param">
+    <sn_cmp_rb_op_impl_param action="INSERT_OR_UPDATE">
+        <applicable_to/>
+        <datasource>2</datasource>
+        <datasourcevalue>ServiceNow::Pools::CloudLocationPool.All</datasourcevalue>
+        <defaultvalue>${parameter.Location}</defaultvalue>
+        <error_text/>
+        <help_text/>
+        <host/>
+        <ismandatory>true</ismandatory>
+        <name>Location</name>
+        <operation display_value="Provision">854310aedb3197008574f4eb0c9619a2</operation>
+        <order>30</order>
+        <read_only>false</read_only>
+        <regex/>
+        <sys_class_name>sn_cmp_rb_op_impl_param</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:03:54</sys_created_on>
+        <sys_id>614350aedb3197008574f4eb0c96190f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Location</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_rb_op_impl_param_614350aedb3197008574f4eb0c96190f</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:03:54</sys_updated_on>
+        <ui_data_type/>
+        <value/>
+        <visibilty>true</visibilty>
+    </sn_cmp_rb_op_impl_param>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_action">
+    <sn_cmp_bp_action action="INSERT_OR_UPDATE">
+        <action_type>1</action_type>
+        <datasource>2</datasource>
+        <name>Reload Location</name>
+        <order>100</order>
+        <rule display_value="Reload Location">705314aedb3197008574f4eb0c961936</rule>
+        <status/>
+        <sys_class_name>sn_cmp_bp_action</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:04:07</sys_created_on>
+        <sys_id>f45314aedb3197008574f4eb0c961938</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reload Location</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_action_f45314aedb3197008574f4eb0c961938</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:04:07</sys_updated_on>
+        <target_attribute>Location</target_attribute>
+        <target_attribute_select/>
+        <value/>
+    </sn_cmp_bp_action>
+</record_update>

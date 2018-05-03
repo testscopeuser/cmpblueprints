@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_catalog_prop">
+    <sn_cmp_bp_catalog_prop action="INSERT_OR_UPDATE">
+        <bp_cat_form_behavior display_value="Amazon Linux v1 Start">a96318aedb3197008574f4eb0c96197e</bp_cat_form_behavior>
+        <datasource>2</datasource>
+        <default_value>${Stack.items[Amazon Linux v1].attributes[object_id]}</default_value>
+        <display_name>Amazon Linux V 1 Stack ID</display_name>
+        <display_order>12</display_order>
+        <error_text/>
+        <form_ui_group display_value="Start">a16318aedb3197008574f4eb0c961986</form_ui_group>
+        <global_prop display_value="Amazon_Linux_v1_StackID">596318aedb3197008574f4eb0c96195b</global_prop>
+        <help_text/>
+        <mandatory>true</mandatory>
+        <name>Amazon_Linux_v1_StackID</name>
+        <parameter_type>1</parameter_type>
+        <policy>${Stack.items[Amazon Linux v1].attributes[object_id]}</policy>
+        <read_only>false</read_only>
+        <regex/>
+        <sys_class_name>sn_cmp_bp_catalog_prop</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:04:27</sys_created_on>
+        <sys_id>e16318aedb3197008574f4eb0c961984</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Amazon_Linux_v1_StackID</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_catalog_prop_e16318aedb3197008574f4eb0c961984</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:04:27</sys_updated_on>
+        <ui_data_type>9</ui_data_type>
+        <unique_id>6255</unique_id>
+        <visibility>false</visibility>
+    </sn_cmp_bp_catalog_prop>
+</record_update>

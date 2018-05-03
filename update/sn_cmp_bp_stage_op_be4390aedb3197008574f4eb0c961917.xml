@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_op">
+    <sn_cmp_bp_stage_op action="INSERT_OR_UPDATE">
+        <blueprint_stage_model display_value="">e64390aedb3197008574f4eb0c961909</blueprint_stage_model>
+        <is_plan_synced>false</is_plan_synced>
+        <name>Deprovision</name>
+        <operation_impl display_value="Deprovision">264350aedb3197008574f4eb0c9619e9</operation_impl>
+        <parallel_plan_generated>false</parallel_plan_generated>
+        <sys_class_name>sn_cmp_bp_stage_op</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:03:59</sys_created_on>
+        <sys_id>be4390aedb3197008574f4eb0c961917</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Deprovision</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_op_be4390aedb3197008574f4eb0c961917</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:03:59</sys_updated_on>
+    </sn_cmp_bp_stage_op>
+</record_update>

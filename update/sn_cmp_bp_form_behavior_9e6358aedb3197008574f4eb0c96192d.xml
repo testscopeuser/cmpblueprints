@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_form_behavior">
+    <sn_cmp_bp_form_behavior action="INSERT_OR_UPDATE">
+        <alias_name>Amazon Linux v1 Cleanup</alias_name>
+        <bp_association display_value="Amazon Linux v1">f44310aedb3197008574f4eb0c961987</bp_association>
+        <cat_item_association display_value="Cleanup">9e6358aedb3197008574f4eb0c961936</cat_item_association>
+        <parent_form_behavior display_value="Amazon Linux v1">c853d0aedb3197008574f4eb0c9619b4</parent_form_behavior>
+        <stage_operation display_value="Cleanup">724390aedb3197008574f4eb0c96191d</stage_operation>
+        <sys_class_name>sn_cmp_bp_form_behavior</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:04:30</sys_created_on>
+        <sys_id>9e6358aedb3197008574f4eb0c96192d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Amazon Linux v1 Cleanup</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_form_behavior_9e6358aedb3197008574f4eb0c96192d</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:04:37</sys_updated_on>
+        <ui_category/>
+    </sn_cmp_bp_form_behavior>
+</record_update>

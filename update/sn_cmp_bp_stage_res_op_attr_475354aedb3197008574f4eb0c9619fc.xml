@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_cmp_bp_stage_res_op_attr">
+    <sn_cmp_bp_stage_res_op_attr action="INSERT_OR_UPDATE">
+        <default_value>${parameter.CloudAccount}</default_value>
+        <name>CloudAccount</name>
+        <rb_operation_attribute display_value="CloudAccount">87239c6edb3197008574f4eb0c9619dd</rb_operation_attribute>
+        <stage_resource_operation display_value="Amazon Linux v1.Stop">f65354aedb3197008574f4eb0c9619f3</stage_resource_operation>
+        <sys_class_name>sn_cmp_bp_stage_res_op_attr</sys_class_name>
+        <sys_created_by>nagaraj.ramanagoudar@snc</sys_created_by>
+        <sys_created_on>2018-05-03 18:04:16</sys_created_on>
+        <sys_id>475354aedb3197008574f4eb0c9619fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CloudAccount</sys_name>
+        <sys_package display_value="CMP Blueprint" source="x_snc_cmp_blueprin">c2d747d6db7d5700c2dff4eb0c961929</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CMP Blueprint">c2d747d6db7d5700c2dff4eb0c961929</sys_scope>
+        <sys_update_name>sn_cmp_bp_stage_res_op_attr_475354aedb3197008574f4eb0c9619fc</sys_update_name>
+        <sys_updated_by>nagaraj.ramanagoudar@snc</sys_updated_by>
+        <sys_updated_on>2018-05-03 18:04:16</sys_updated_on>
+        <type_of_map>1</type_of_map>
+        <use_in_operation>false</use_in_operation>
+    </sn_cmp_bp_stage_res_op_attr>
+</record_update>
